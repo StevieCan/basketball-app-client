@@ -8,6 +8,7 @@ class Client::TeamsController < ApplicationController
                     }
     response = Unirest.get(
                           "http://localhost:3000/api/teams",
+                          parameters: client_params
                           )
     @teams = response.body
     render 'index.html.erb'
