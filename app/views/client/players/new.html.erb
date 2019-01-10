@@ -1,0 +1,19 @@
+<h1>Player Signup!</h1>
+<%= form_tag '/signup', method: :post do  %>
+  <div>
+    Name: <input type="text" name="name">
+  </div>
+  <div>
+    Position: <input type="integer" name="position">
+  </div>
+  <div>
+    Age: <input type="integer" name="age">
+  </div>
+  <div>
+    Points: <input type="integer" name="points">
+  </div>
+  <div>
+    Team: <input type="text" name="team">
+  </div>
+  <input type="submit" value="Submit">
+<% end %>
