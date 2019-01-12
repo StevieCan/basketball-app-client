@@ -1,0 +1,16 @@
+<h1>New Team</h1>
+<%= form_tag '/signup', method: :post do  %>
+  <div>
+    Name: <input type="text" name="name">
+  </div>
+  <div>
+    Points Allowed: <input type="integer" name="points_allowed">
+  </div>
+  <div>
+    Points Scored: <input type="integer" name="points_scored">
+  </div>
+  <div>
+    Average Age: <input type="integer" name="avg_age">
+  </div>
+  <input type="submit" value="Submit">
+<% end %>
