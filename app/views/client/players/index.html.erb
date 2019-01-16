@@ -18,4 +18,21 @@
     </ul>
   </li>
 </ul> -->
-<%= @players %>
+<%= @players.each do |player| %>
+  <h2><%= player["name"] %></h2>
+  <h3>Team: <%= player["team"] %></h2>
+  <h4>Points: <%= player["points"] %></h2>
+  <h4>Position: <%= player["position"] %></h2>
+  <h4>Age: <%= player["age"] %></h2>
+  <br>
+
+
+<% end %>
+
+
+
+
+
+
+
+
