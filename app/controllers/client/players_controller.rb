@@ -46,7 +46,7 @@ class Client::PlayersController < ApplicationController
   def show
     player_id = params[:id]
     response = Unirest.get("http://localhost:3000/api/players/#{player_id}")
-    @player = resonse.body
+    @player = response.body
     render 'show.html.erb'
   end
 
